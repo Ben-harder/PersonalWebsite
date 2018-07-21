@@ -7,13 +7,14 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
         crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="callout.css">
+
 
     <title>Ben Harder</title>
 </head>
@@ -49,17 +50,22 @@
                                 <div class="card card-body">
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item">
-                                            <h6>Developed precise interactive applications using Unity, written in C#, to test study subjects for various brain functions
+                                            <h6>Developed precise interactive applications using Unity, written in C#, to test
+                                                study subjects for various brain functions
                                             </h6>
                                         </li>
                                         <li class="list-group-item">
-                                            <h6>Designed the applications with the capability to be modified easily by the end user to accomodate different studies</h6>
+                                            <h6>Designed the applications with the capability to be modified easily by the end
+                                                user to accomodate different studies</h6>
                                         </li>
                                         <li class="list-group-item">
                                             <h6>Worked independantly and was the sole developer working on the applications</h6>
                                         </li>
                                         <li class="list-group-item">
-                                            <h6>Managed all aspects of product developement including the overall project management, software construction, quality assurance, product deployment, and technical documentation</h6>
+                                            <h6>Managed all aspects of product developement including the overall project management,
+                                                software construction, quality assurance, product deployment, and technical
+                                                documentation
+                                            </h6>
                                         </li>
                                         <li class="list-group-item">
                                             <h6>Carefully managed project progress using a Kanban table
@@ -112,9 +118,30 @@
                 </div>
                 <div class="card bg-light mb-3">
                     <div class="card-header">
-                        <h5 class="card-title">Projects</h5>
+                        <h5 class="card-title">School Projects</h5>
                     </div>
-                    <div class="card-body"></div>
+                    <div class="card-body">
+                        <div class="bs-callout bs-callout-secondary" data-toggle="collapse" data-target="#SecurityCollapse" aria-expanded="false"
+                            aria-controls="SecurityCollapse" style="cursor: pointer">
+                            <h4>Remote controlled security system
+                                <br>
+                                <small>January 2018 - March 2018</small>
+                            </h4>
+                            <div class="collapse" id="SecurityCollapse">
+                                <div class="card card-body">
+                                    <h5>Features</h5>
+                                    <p>Remote door locking, live webcam feed accessible through mobile app and website, secret
+                                        door knocks as key alternative.
+                                    </p>
+                                    <hr class="my-4">
+                                    <h5>My Role</h5>
+                                    <p>Utilized Phonegap to develop a mobile app to allow the user to lock/unlock their door,
+                                        log in/out of their account, chat with a visitor, and view a snapshot of what the
+                                        security camera was seeing.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col">
@@ -123,7 +150,8 @@
                         <h5 class="card-title">About me</h5>
                     </div>
                     <div class="card-body">
-                        <p class="card-text">I am a third year computer engineering student at UBC. I live on the North Shore and am passionate about animals, video games, and of course tech.</p>
+                        <p class="card-text">I am a third year computer engineering student at UBC. I live on the North Shore and am passionate
+                            about animals, video games, and of course tech.</p>
                     </div>
                 </div>
                 <div class="card bg-success text-white mb-3">
@@ -138,12 +166,61 @@
                             <small>2016-2017</small>
                         </h6>
                     </div>
-
+                </div>
+                <div class="card bg-primary text-white mb-3">
+                    <div class="card-header">
+                        <h5 class="card-title">Personal Projects</h5>
+                    </div>
+                    <div class="card-body">
+                        <h6 style="cursor: pointer" data-toggle="modal" data-target="#nbodyModal">N-Body simulator</h6>
+                        <hr class="my-4">
+                        <h6 style="cursor: pointer" data-toggle="modal" data-target="#snakeModal">Classic snake arcade game</h6>
+                    </div>
                 </div>
             </div>
 
+            <div class="modal fade" id="nbodyModal" tabindex="-1" role="dialog" aria-labelledby="nbodyModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="nbodyModalLabel">N-Body Simulator</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+
+                        <div class="modal-body" id="nbodyModalBody">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="snakeModal" tabindex="-1" role="dialog" aria-labelledby="snakeModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="snakeModalLabel">Snake Game</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+
+                        <div class="modal-body text-center" id="snakeModalBody">
+                            <div class="jumbotron" id="scoreJumbotron" style="margin-top: 20px; color: white; padding: 10px; background-color: rgb(64, 119, 238);">
+                                <h1 class="text-center" id="scoreText"></h1>
+                                <p class="text-center">Use wasd to move</p>
+                            </div>
+                            <canvas id="snakeCanvas" width="400" height="400" style="background-color: darkslateblue;"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
+<script src="./JavaScript/snake.js"></script>
+<script src="./JavaScript/block.js"></script>
+<script src="./JavaScript/game.js"></script>
 
 </html>
