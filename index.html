@@ -17,32 +17,18 @@
 
 
     <style>
-        .nav-item .nav-link:not(.active) {
-            background-color: white;
-            outline-style: solid;
-            outline-width: 2px;
-            outline-color: black;
-            color: black;
-        }
-
-        .nav-item {
-            background-color: black;
-            outline-style: solid;
-            outline-width: 2px;
-            outline-color: black;
-            color: white;
-        }
-
-        .nav-item .nav-link:not(.active):hover {
-            background-color: rgb(231, 231, 231);
+        a.active {
+            background-color: rgb(233, 233, 233);
+            color: grey;
         }
 
         a {
-            color: inherit;
+            display: block;
+            color: black;
         }
 
         a:hover {
-            color: inherit;
+            color: grey;
         }
     </style>
 
@@ -52,218 +38,226 @@
 <body>
     <div class="container h-100">
         <div class="row">
-            <div class="col-lg-10">
-                <div class="row h-100 justify-content-center align-items-center">
-                    <div class="col-xs-1">
-                        <div class="tab-content">
-                            <div class="tab-pane active" id="about" role="tabpanel">
-                                <img src="tree.jpg" class="img-fluid">
-                                <div class="page-header">
-                                    <h1 class="display-4 text-center">Ben Harder
+            <div class="col">
+                <ul class="nav nav-fill text-center">
+                    <li class="nav-item">
+                        <a class="nav-link active show" id="aboutTab" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="workExperienceTab" href="#workExperience">Work Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="schoolTab" href="#school">School</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="projectsTab" href="#projects">Projects</a>
+                    </li>
+
+                </ul>
+                <hr class="my-4">
+                <div class="tab-content">
+                    <div class="tab-pane active" id="about" role="tabpanel">
+                        <img src="tree.jpg" class="img-fluid"> </img>
+                        <div class="page-header">
+                            <h1 class="display-5 text-center">Ben Harder
+                                <small>
+                                    <br>UBC Computer Engineering Student
+                                    <br>
+                                </small>
+                            </h1>
+                            <hr class="my-4">
+                        </div>
+                        <div class="jumbotron shadow">
+                            <h3>About me</h3>
+                            <p>I am a third year computer engineering student at UBC. I am from North Vancouver and am passionate
+                                about animals, video games, and of course tech.
+                                <br>
+                                <br>I have professional experience in interactive application developement, testing automation,
+                                and web developement. Throughout my jobs I have often worked independently and so have learned
+                                a lot about project and time management.
+                                <br>
+                                <br>I am currently seeking an 8-12 month co-op placement starting in January; I am excited to
+                                continue to learn and improve my skills in a professional setting.</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="workExperience" role="tabpanel">
+                        <div class="card mb-3 shadow">
+                            <div class="card-header">
+                                <h5 class="card-title">Technical Work Experience</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="bs-callout bs-callout-primary" data-toggle="collapse" data-target="#UBCCollapse" aria-expanded="false" aria-controls="UBCCollapse"
+                                    style="cursor: pointer">
+                                    <h4>UBC Lab of Developmental Cognitive Neuroscience
                                         <small>
-                                            <br>UBC Computer Engineering Student
-                                            <br>
-                                        </small>
-                                    </h1>
-                                    <hr class="my-4">
-                                </div>
-                                <div class="jumbotron shadow">
-                                    <h3>About me</h3>
-                                    <p class="card-text">I am a third year computer engineering student at UBC. I am from North Vancouver and
-                                        am passionate about animals, video games, and of course tech.
-                                        <br>
-                                        <br>I have professional experience in interactive application developement, testing automation,
-                                        and web developement. Throughout my jobs I have often worked independently and so
-                                        have learned a lot about project and time management.
-                                        <br>
-                                        <br>I am currently seeking an 8-12 month co-op placement starting in January; I am excited
-                                        to continue to learn and improve my skills in a professional setting.</p>
-                                    </img>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="workExperience" role="tabpanel">
-                                <div class="card mb-3 shadow">
-                                    <div class="card-header">
-                                        <h5 class="card-title">Technical Work Experience</h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="bs-callout bs-callout-primary" data-toggle="collapse" data-target="#UBCCollapse" aria-expanded="false" aria-controls="UBCCollapse"
-                                            style="cursor: pointer">
-                                            <h4>UBC Lab of Developmental Cognitive Neuroscience
-                                                <small>
-                                                    <br>Summer of 2018</small>
-                                            </h4>
-                                            <h5>Interactive Media Developer</h5>
+                                            <br>Summer of 2018</small>
+                                    </h4>
+                                    <h5>Interactive Media Developer</h5>
 
-                                            <div class="collapse" id="UBCCollapse">
-                                                <div class="card card-body">
-                                                    <ul class="list-group list-group-flush">
-                                                        <li class="list-group-item">
-                                                            <h6>Developed precise interactive applications using Unity, written
-                                                                in C#, to test study subjects for various brain functions
-                                                            </h6>
-                                                        </li>
-                                                        <li class="list-group-item">
-                                                            <h6>Designed and created user friendly data utility applications
-                                                                using Electron.
-                                                            </h6>
-                                                        </li>
-                                                        <li class="list-group-item">
-                                                            <h6>Designed the applications with the capability to be modified
-                                                                easily by the end user to accomodate different studies</h6>
-                                                        </li>
-                                                        <li class="list-group-item">
-                                                            <h6>Worked independantly and was the sole developer working on the
-                                                                applications
-                                                            </h6>
-                                                        </li>
-                                                        <li class="list-group-item">
-                                                            <h6>Managed all aspects of product developement including the overall
-                                                                project management, software construction, quality assurance,
-                                                                product deployment, and technical documentation
-                                                            </h6>
-                                                        </li>
-                                                        <li class="list-group-item">
-                                                            <h6>Carefully managed project progress using a Kanban table
-                                                            </h6>
-                                                        </li>
-                                                        <li class="list-group-item">
-                                                            <h6>Created clear and detailed user documentation</h6>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
+                                    <div class="collapse" id="UBCCollapse">
+                                        <div class="card card-body">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <h6>Developed precise interactive applications using Unity, written in C#,
+                                                        to test study subjects for various brain functions
+                                                    </h6>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <h6>Designed and created user friendly data utility applications using Electron.
+                                                    </h6>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <h6>Designed the applications with the capability to be modified easily by
+                                                        the end user to accomodate different studies</h6>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <h6>Worked independantly and was the sole developer working on the applications
+                                                    </h6>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <h6>Managed all aspects of product developement including the overall project
+                                                        management, software construction, quality assurance, product deployment,
+                                                        and technical documentation
+                                                    </h6>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <h6>Carefully managed project progress using a Kanban table
+                                                    </h6>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <h6>Created clear and detailed user documentation</h6>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <div class="bs-callout bs-callout-danger" data-toggle="collapse" data-target="#PolycomCollapse" aria-expanded="false" aria-controls="PolycomCollapse"
-                                            style="cursor: pointer">
-                                            <h4>Polycom
-                                                <small>
-                                                    <br>Summer of 2017</small>
-                                            </h4>
-                                            <h5>Test Automation Intern</h5>
+                                    </div>
+                                </div>
+                                <div class="bs-callout bs-callout-danger" data-toggle="collapse" data-target="#PolycomCollapse" aria-expanded="false" aria-controls="PolycomCollapse"
+                                    style="cursor: pointer">
+                                    <h4>Polycom
+                                        <small>
+                                            <br>Summer of 2017</small>
+                                    </h4>
+                                    <h5>Test Automation Intern</h5>
 
-                                            <div class="collapse" id="PolycomCollapse">
-                                                <div class="card card-body">
-                                                    <ul class="list-group list-group-flush">
-                                                        <li class="list-group-item">
-                                                            <h6>Maintained upwards of 50 phone test units in order to continuously
-                                                                test for software issues
-                                                            </h6>
-                                                        </li>
-                                                        <li class="list-group-item">
-                                                            <h6>Developed and improved automated tests using Perl to be executed
-                                                                on up to 50 phone units</h6>
-                                                        </li>
-                                                        <li class="list-group-item">
-                                                            <h6>Changes were made carefully using SVN to avoid conflicts</h6>
-                                                        </li>
-                                                        <li class="list-group-item">
-                                                            <h6>Developed features for an automated test dashboard website using
-                                                                Javascript
-                                                                <br>
-                                                                <small>Features included a minimizing page search and page linking/sharing
-                                                                    functionality
-                                                                </small>
-                                                            </h6>
-                                                        </li>
-                                                        <li class="list-group-item">
-                                                            <h6>Created clear and detailed documentation using Confluence </h6>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
+                                    <div class="collapse" id="PolycomCollapse">
+                                        <div class="card card-body">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <h6>Maintained upwards of 50 phone test units in order to continuously test
+                                                        for software issues
+                                                    </h6>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <h6>Developed and improved automated tests using Perl to be executed on up
+                                                        to 50 phone units</h6>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <h6>Changes were made carefully using SVN to avoid conflicts</h6>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <h6>Developed features for an automated test dashboard website using Javascript
+                                                        <br>
+                                                        <small>Features included a minimizing page search and page linking/sharing
+                                                            functionality
+                                                        </small>
+                                                    </h6>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <h6>Created clear and detailed documentation using Confluence </h6>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane" id="school" role="tabpanel">
-                                <div class="card mb-3 shadow">
-                                    <div class="card-header">
-                                        <h5 class="card-title">Education</h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <h6>University of British Columbia
-                                            <small>2017-present</small>
-                                        </h6>
-                                        <h6>University of Capilano
-                                            <small>2016-2017</small>
-                                        </h6>
-                                    </div>
-                                </div>
-                                <div class="card mb-3 shadow">
-                                    <div class="card-header">
-                                        <h5 class="card-title">Personal Projects</h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <h6 style="cursor: pointer" data-toggle="modal" data-target="#nbodyModal">N-Body simulator</h6>
-                                        <hr class="my-4">
-                                        <h6 style="cursor: pointer" data-toggle="modal" data-target="#snakeModal">Classic snake arcade game</h6>
-                                    </div>
-                                    <div class="card-footer">
-                                        Github:
-                                        <a href="https://github.com/Ben-harder">github.com/Ben-harder</a>
-                                    </div>
-                                </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="school" role="tabpanel">
+                        <div class="card mb-3 shadow">
+                            <div class="card-header">
+                                <h5 class="card-title">Education</h5>
                             </div>
-                            <div class="tab-pane" id="projects" role="tabpanel">
-                                <div class="card mb-3 shadow">
-                                    <div class="card-header">
-                                        <h5 class="card-title">School Projects</h5>
+                            <div class="card-body">
+                                <h6>University of British Columbia
+                                    <small>2017-present</small>
+                                </h6>
+                                <h6>University of Capilano
+                                    <small>2016-2017</small>
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="card mb-3 shadow">
+                            <div class="card-header">
+                                <h5 class="card-title">Personal Projects</h5>
+                            </div>
+                            <div class="card-body">
+                                <h6 style="cursor: pointer" data-toggle="modal" data-target="#nbodyModal">N-Body simulator</h6>
+                                <hr class="my-4">
+                                <h6 style="cursor: pointer" data-toggle="modal" data-target="#snakeModal">Classic snake arcade game</h6>
+                            </div>
+                            <div class="card-footer">
+                                Github:
+                                <a href="https://github.com/Ben-harder">github.com/Ben-harder</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="projects" role="tabpanel">
+                        <div class="card mb-3 shadow">
+                            <div class="card-header">
+                                <h5 class="card-title">School Projects</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="bs-callout bs-callout-dark" data-toggle="collapse" data-target="#SecurityCollapse" aria-expanded="false" aria-controls="SecurityCollapse"
+                                    style="cursor: pointer">
+                                    <h5>Remote controlled security system
+                                        <br>
+                                        <small>January 2018 - March 2018</small>
+                                    </h5>
+                                    <div class="collapse" id="SecurityCollapse">
+                                        <div class="card card-body">
+                                            <h5>Features</h5>
+                                            <p>Remote door locking, live webcam feed accessible through mobile app and website,
+                                                secret door knocks as key alternative.
+                                            </p>
+                                            <hr class="my-4">
+                                            <h5>My Role</h5>
+                                            <p>Utilized Phonegap to develop a mobile app to allow the user to lock/unlock their
+                                                door, log in/out of their account, chat with a visitor, and view a snapshot
+                                                of what the security camera was seeing.</p>
+                                        </div>
                                     </div>
-                                    <div class="card-body">
-                                        <div class="bs-callout bs-callout-dark" data-toggle="collapse" data-target="#SecurityCollapse" aria-expanded="false" aria-controls="SecurityCollapse"
-                                            style="cursor: pointer">
-                                            <h5>Remote controlled security system
-                                                <br>
-                                                <small>January 2018 - March 2018</small>
-                                            </h5>
-                                            <div class="collapse" id="SecurityCollapse">
-                                                <div class="card card-body">
-                                                    <h5>Features</h5>
-                                                    <p>Remote door locking, live webcam feed accessible through mobile app and
-                                                        website, secret door knocks as key alternative.
-                                                    </p>
-                                                    <hr class="my-4">
-                                                    <h5>My Role</h5>
-                                                    <p>Utilized Phonegap to develop a mobile app to allow the user to lock/unlock
-                                                        their door, log in/out of their account, chat with a visitor, and
-                                                        view a snapshot of what the security camera was seeing.</p>
-                                                </div>
-                                            </div>
+                                </div>
+                                <div class="bs-callout bs-callout-dark" data-toggle="collapse" data-target="#CPUCollapse" aria-expanded="false" aria-controls="CPUCollapse"
+                                    style="cursor: pointer">
+                                    <h5>Turing Complete CPU
+                                        <br>
+                                        <small>September 2017 - December 2017</small>
+                                    </h5>
+                                    <div class="collapse" id="CPUCollapse">
+                                        <div class="card card-body">
+                                            <h5>Description</h5>
+                                            <p>Myself and a partner developed a fully Turing complete CPU written in Verilog.
+                                                A DE1-SOC board was used. The components of the CPU were coded from scratch,
+                                                including a finite state machine, datapath, register file, instruction decoder,
+                                                and more.
+                                            </p>
                                         </div>
-                                        <div class="bs-callout bs-callout-dark" data-toggle="collapse" data-target="#CPUCollapse" aria-expanded="false" aria-controls="CPUCollapse"
-                                            style="cursor: pointer">
-                                            <h5>Turing Complete CPU
-                                                <br>
-                                                <small>September 2017 - December 2017</small>
-                                            </h5>
-                                            <div class="collapse" id="CPUCollapse">
-                                                <div class="card card-body">
-                                                    <h5>Description</h5>
-                                                    <p>Myself and a partner developed a fully Turing complete CPU written in
-                                                        Verilog. A DE1-SOC board was used. The components of the CPU were
-                                                        coded from scratch, including a finite state machine, datapath, register
-                                                        file, instruction decoder, and more.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="bs-callout bs-callout-dark" data-toggle="collapse" data-target="#Mousetrap" aria-expanded="false" aria-controls="Mousetrap"
-                                            style="cursor: pointer">
-                                            <h5>Raspberry Pi Mousetrap
-                                                <br>
-                                                <small>January 2017 - May 2017</small>
-                                            </h5>
-                                            <div class="collapse" id="Mousetrap">
-                                                <div class="card card-body">
-                                                    <h5>Description</h5>
-                                                    <p>In a team of peers, we developed an ethical mousetrap to catch a mouse
-                                                        without harming it. A passive infrared sensor was used to detect
-                                                        movement within the trap. A servo motor would then turn, releasing
-                                                        a door and trapping whatever was within.
-                                                    </p>
-                                                </div>
-                                            </div>
+                                    </div>
+                                </div>
+                                <div class="bs-callout bs-callout-dark" data-toggle="collapse" data-target="#Mousetrap" aria-expanded="false" aria-controls="Mousetrap"
+                                    style="cursor: pointer">
+                                    <h5>Raspberry Pi Mousetrap
+                                        <br>
+                                        <small>January 2017 - May 2017</small>
+                                    </h5>
+                                    <div class="collapse" id="Mousetrap">
+                                        <div class="card card-body">
+                                            <h5>Description</h5>
+                                            <p>In a team of peers, we developed an ethical mousetrap to catch a mouse without
+                                                harming it. A passive infrared sensor was used to detect movement within
+                                                the trap. A servo motor would then turn, releasing a door and trapping whatever
+                                                was within.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -272,29 +266,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="row h-100 justify-content-center align-items-center">
-                    <div class="col">
-                        <ul class="nav nav-justified flex-column shadow" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" data-toggle="tab" href="#about" role="tab">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#workExperience" role="tab">Work Experience</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#school" role="tab">School</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#projects" role="tab">Projects</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
-    
+
+
     <div class="modal fade" id="nbodyModal" tabindex="-1" role="dialog" aria-labelledby="nbodyModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">

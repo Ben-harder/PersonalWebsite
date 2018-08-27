@@ -1,19 +1,19 @@
-$('#about').click(function (e)
+$('#aboutTab').click(function (e)
 {
     e.preventDefault()
     $(this).tab('show')
 });
-$('#workExperience').click(function (e)
+$('#workExperienceTab').click(function (e)
 {
     e.preventDefault()
     $(this).tab('show')
 });
-$('#school').click(function (e)
+$('#schoolTab').click(function (e)
 {
     e.preventDefault()
     $(this).tab('show')
 });
-$('#projects').click(function (e)
+$('#projectsTab').click(function (e)
 {
     e.preventDefault()
     $(this).tab('show')
