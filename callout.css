@@ -28,7 +28,7 @@
     border-left-color: #428bca;
 }
 .bs-callout-primary h4 {
-    color: #428bca;
+    color: #ffffff;
 }
 .bs-callout-success {
     border-left-color: #5cb85c;
@@ -53,4 +53,19 @@
 }
 .bs-callout-info h4 {
     color: #5bc0de;
+}
+.bs-callout-hollow {
+    border-left-color: #ffffff;
+    color: #ffffff;
+}
+.bs-callout-hollow h4 {
+    color: #ffffff;
+}
+.bs-callout-light {
+    border-left-color: #ffffff;
+    background-color: #ffffff;
+    color: black;
+}
+.bs-callout-light h4 {
+    color: #ffffff;
 }
